@@ -1,3 +1,4 @@
+package chap02
 //var externvar: Int //초기화 하지 않아서 에러
 
 class Sample{

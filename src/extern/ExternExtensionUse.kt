@@ -1,7 +1,7 @@
 package extern
 
-import chap11.ExternTest
-import chap11.data2
+import chap06.ExternTest
+import chap06.data2
 
 fun main(args: Array<String>) {
     val obj: ExternTest = ExternTest()

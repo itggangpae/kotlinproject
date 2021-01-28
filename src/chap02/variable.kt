@@ -1,3 +1,4 @@
+package chap02
 val read1 :Int = 100 //자료형 명시
 val read2 = 200 //자료형 유추
 var assign = 700

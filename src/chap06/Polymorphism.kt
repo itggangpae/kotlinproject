@@ -1,40 +1,20 @@
 package chap06
 
-open class Starcraft{
-    open fun attack(){}
+open class Super2
+
+class Sub2 : Super2()
+
+fun Super2.sayHello(){
+    println("Super..sayHello()")
+}
+fun Sub2.sayHello(){
+    println("Sub..sayHello()")
 }
 
-final class Protoss : Starcraft(){
-    override fun attack() {
-        super.attack()
-        println("프로토스의 공격")
-    }
-}
-
-final class Zerg : Starcraft(){
-    override fun attack() {
-        super.attack()
-        println("저그의 공격")
-    }
-}
-
-final class Terran : Starcraft(){
-    override fun attack() {
-        super.attack()
-        println("테란의 공격")
-    }
+fun some(obj: Super2){
+    obj.sayHello()
 }
 
 fun main(args: Array<String>) {
-    var star : Starcraft = Starcraft()
-
-    star = Protoss()
-    star.attack()
-
-    star = Zerg();
-    star.attack()
-
-    star = Terran();
-    star.attack()
-
+    some(Sub2())
 }

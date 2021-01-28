@@ -1,3 +1,4 @@
+package chap02
 var rw : Int = 10
     get(){
         println("rw를 =없이 사용")
